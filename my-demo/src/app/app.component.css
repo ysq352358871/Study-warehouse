@@ -1,0 +1,32 @@
+#wrap{
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+}
+.nav.nav-tabs{
+  height: 40px;
+}
+.nav.nav-tabs li a{
+  display: block;
+  height: 40px;
+  box-sizing: border-box;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-top: 1px solid transparent;
+  line-height: 40px;
+}
+.nav.nav-tabs li a.active{
+  background-color: #fff;
+  border-left: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6;
+  border-top: 1px solid #dee2e6;
+
+}
+.nav.nav-tabs a{
+  padding: 0px 15px;
+}
+a,a:link,a:visited,a:hover,a:active{
+  text-decoration: none;
+  list-style: none;
+}
+

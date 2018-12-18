@@ -1,0 +1,8 @@
+
+<p>这是Book模块的首页 他有几个儿子路由 如下：</p>
+<!--导航栏-->
+<ul class="nav nav-tabs">
+  <li ><a  routerLink="/book">Book list</a></li>
+  <li><a [routerLink]="['/book/bookDetail',id]" [queryParams]="{bookname:'《活着》'}">Detail</a></li>
+</ul>
+<router-outlet></router-outlet>

@@ -1,0 +1,45 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    {{ title }}!
+  </h1>
+  <p>{{testScript}}</p>
+  <p [innerHtml]="testScript"></p>
+</div>
+<nav class="nav">
+  <a routerLink="/heroes" routerLinkActive="active">Heroes</a>
+  <a routerLink="/fesponsive" routerLinkActive="active">响应式表单例子</a>
+  <a routerLink="/templateDriven" routerLinkActive="active">模板驱动表单例子</a>
+  <a routerLink="/formValidation" routerLinkActive="active">表单验证(同步)</a>
+  <a routerLink="/formValidationAsync" routerLinkActive="active">表单验证(异步)</a>
+  <a routerLink="/dynamicFormExample" routerLinkActive="active">动态表单例子</a>
+  <a routerLink="/httpTest" routerLinkActive="active">HttpClient 模块使用例子</a>
+</nav>
+<!--<app-heroes></app-heroes>-->
+<router-outlet></router-outlet>
+<app-message></app-message>
+<app-size [size]="fontSizePx" (sizeChange)="fontSizePx=$event"></app-size>
+<div [style.font-size.px]="fontSizePx">Resizable Text</div>
+<app-ad-banner [ads]="ads"></app-ad-banner>
+
+<div>
+  <p>这是一个自定义属性指令的实例</p>
+  <p appCustom >通过指令设置元素的样式</p>
+  <p>属性指令通过@Input 输入值</p>
+  <p [appCustom]="'blue'" defaultColor="black">传入值是蓝色</p>
+</div>
+
+<div>
+   <P style="font-weight: bold;color: red">下面是一个自定义结构类型指令的例子（效果与*ngIf相反）</P>
+  <div>
+    当前的条件是<span [style.color] = "'red'">{{condition}}</span>
+    <button value="" style="height: 30px;width: 300px" (click)="changeCondition()">改变条件</button>
+    <p [style.color]="'green'" *appCustomUnless="condition">条件为假时,就会显示我。假假假假假假假的时候</p>
+    <p [style.color]="'pink'" *appCustomUnless="!condition">条件为真时,就会显示我。真真真真真真真的时候</p>
+  </div>
+</div>
+
+<div>
+  <p style="font-weight: bold;color: red">下面是一个自定义管道的例子</p>
+  <p>管道处理后输出的值：{{2 | myPipe: 10}}</p>
+</div>

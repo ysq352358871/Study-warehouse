@@ -1,0 +1,43 @@
+<p style="font-weight: bold;color: red;margin-top: 30px;margin-bottom: 30px">模板驱动表单验证的例子</p>
+
+{{name.errors | json}}
+<input id="name" name="name" class="form-control"
+       required minlength="2" appMyValidationTwo = 'Patrick'
+       [(ngModel)]="hero.name" #name="ngModel" >
+
+<div *ngIf="name.invalid && (name.dirty || name.touched)"
+     class="alert alert-danger">
+
+  <div *ngIf="name.errors.required">
+    Name is required.
+  </div>
+  <div *ngIf="name.errors.minlength">
+    Name must be at least 2 characters long.
+  </div>
+  <div *ngIf="name.errors.forbiddenName">
+    Name cannot be Bob.
+  </div>
+</div>
+
+<p style="font-weight: bold;color: red;margin-top: 30px">响应式驱动表单验证的例子</p>
+<form [formGroup] = 'profileForm'>
+  <div class="form-group">
+    <label for="nameTwo">Name</label>
+    <input type="text" class="form-control" id="nameTwo" formControlName="nameTwo" required>
+  </div>
+  <div *ngIf="nameTwo.errors && nameTwo.errors.required">
+    Name is required.
+  </div>
+  <div *ngIf="nameTwo.errors && nameTwo.errors.minlength">
+    姓名的最小长度为2
+  </div>
+  <div *ngIf="nameTwo.errors && nameTwo.errors.forbiddenName">
+    姓名不能为Patrick
+  </div>
+  <div class="form-group">
+    <label for="id">Id</label>
+    <input type="text" class="form-control" id="id" formControlName="id" required>
+  </div>
+  <div *ngIf="id.errors && id.errors.required">ID是必选项</div>
+  <button type="submit" class="btn btn-default" [disabled]="profileForm.invalid">Submit</button>
+</form>
