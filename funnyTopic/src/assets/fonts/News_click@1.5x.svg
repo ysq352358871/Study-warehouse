@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Bottom Bar/icon/News_click</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M1,4.00012207 C1,2.3432004 2.34308127,1 4.00138694,1 L19.9986131,1 C21.6562333,1 23,2.3360431 23,4.00012207 L23,16.9998779 C23,18.6567996 21.6545486,20 19.9925232,20 L17.5,20 L15.2543924,20 C14.9758242,20 14.6246923,20.1822658 14.4660595,20.4130044 L12.5698018,23.1711974 C12.2551089,23.6289324 11.7462158,23.6308594 11.4301982,23.1711974 L9.53394052,20.4130044 C9.3771245,20.1849084 9.03421211,20 8.74560761,20 L6.5,20 L4.00747681,20 C2.34649323,20 1,18.6639569 1,16.9998779 L1,4.00012207 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="22" height="22.5152217" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Bottom-Bar/News" transform="translate(-96.000000, -23.000000)">
+            <g id="消息">
+                <g transform="translate(94.000000, 23.000000)">
+                    <g id="Bottom-Bar/icon/Topic" transform="translate(2.000000, 0.000000)">
+                        <use id="Rectangle-3" stroke="#2582F3" mask="url(#mask-2)" stroke-width="2" xlink:href="#path-1"></use>
+                        <g id="Group-2" transform="translate(6.000000, 10.000000)" fill="#2582F3">
+                            <circle id="Oval" cx="1" cy="1" r="1"></circle>
+                            <circle id="Oval" cx="6" cy="1" r="1"></circle>
+                            <circle id="Oval" cx="11" cy="1" r="1"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

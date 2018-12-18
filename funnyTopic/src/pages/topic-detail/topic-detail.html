@@ -1,0 +1,171 @@
+<!--
+  Generated template for the TopicDetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<div id="detailContent">
+  <ion-header>
+    <ion-navbar>
+      <ion-title>Topic details</ion-title>
+    </ion-navbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-card>
+      <ion-card-header>
+        {{topicDetailData.title}}
+      </ion-card-header>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="{{topicDetailData.userAvatar}}">
+        </ion-avatar>
+        <h2 class="name" item-start>{{topicDetailData.nickName}}</h2>
+        <!--<p>November 5, 1955</p>-->
+        <button ion-button item-end class="followBtn" *ngIf="userId != topicDetailData.userId" [class.isFollow]="isFollow" (click)="addFollow()">
+          <ion-icon [name]="isFollow ? 'checkmark' : 'add'" ></ion-icon>
+          Follow
+        </button>
+      </ion-item>
+
+      <!--<img src="assets/imgs/card-sf.png">-->
+
+      <!--<ion-card-content>-->
+        <!--<p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>-->
+      <!--</ion-card-content>-->
+      <div *ngIf="topicDetailData.video">
+        <vg-player>
+          <video [vgMedia]="media" #media id="singleVideo" preload="auto" controls
+                 height="210" preload="auto"
+                 poster="{{topicDetailData.previewImg}}"
+                 crossorigin playsinline webkit-playsinline
+          >
+            <source src="{{topicDetailData.video}}" type="video/mp4">
+          </video>
+        </vg-player>
+        <div [innerHtml]="topicDetailData.html">
+
+        </div>
+      </div>
+      <div *ngIf="!topicDetailData.video">
+        <div [innerHtml]="topicDetailData.html"></div>
+      </div>
+      <ion-row>
+        <ion-col>
+          <button ion-button icon-left clear small>
+            <img src="assets/fonts/Focus@1.5x.svg" alt="">
+            <div class="focusNum">{{topicDetailData.collectionNum | number:0}} Likes</div>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button icon-left clear small>
+            <img src="assets/fonts/News@1.5x.svg" alt="">
+            <div>{{topicDetailData.chatNum | number:0}}</div>
+          </button>
+        </ion-col>
+        <ion-col center text-center>
+          <button ion-button icon-left clear small>
+            <div>{{topicDetailData.createTime*1000 | date:'yyyy-MM-dd'}}</div>
+          </button>
+        </ion-col>
+      </ion-row>
+
+    </ion-card>
+    <ion-list>
+      <ion-list-header id="goodCom">
+        <button ion-button item-start>
+          <ion-icon name="news" class="comment"></ion-icon>
+          Comments
+        </button>
+        <button ion-button item-end id="write" (click)="goWriteComment()">
+          <ion-icon name="news" class="comment"></ion-icon>
+          Write a note
+        </button>
+      </ion-list-header>
+
+
+      <!--<ion-item>-->
+        <!--<ion-avatar item-start>-->
+          <!--<img src="assets/imgs/stantz.jpg">-->
+        <!--</ion-avatar>-->
+        <!--<div class="title">-->
+          <!--<h2>张三</h2>-->
+        <!--</div>-->
+        <!--<p class="commentsText">哈哈哈</p>-->
+        <!--<ion-row>-->
+          <!--<ion-col>-->
+            <!--<button ion-button icon-left clear small>-->
+              <!--2017-08-10-->
+            <!--</button>-->
+          <!--</ion-col>-->
+          <!--<ion-col center text-right>-->
+            <!--<button ion-button icon-left clear small (click)="addGood()">-->
+              <!--&lt;!&ndash;<ion-icon name="focus"></ion-icon>&ndash;&gt;-->
+              <!--<img src="assets/imgs/good_gray.svg" alt="">-->
+              <!--<div class="focusNum">2017-08-12</div>-->
+            <!--</button>-->
+          <!--</ion-col>-->
+        <!--</ion-row>-->
+      <!--</ion-item>-->
+
+
+      <ion-item *ngFor="let item of comments">
+        <ion-avatar item-start>
+          <img src="{{item.userAvatar}}">
+        </ion-avatar>
+        <div class="title">
+          <h2>{{item.nickName}}</h2>
+        </div>
+        <p class="commentsText">{{item.text}}</p>
+        <ion-row>
+            <ion-col>
+              <button ion-button icon-left clear small>
+                {{item.createTime*1000 | date:'yyyy-MM-dd'}}
+              </button>
+            </ion-col>
+            <ion-col center text-right>
+              <button ion-button icon-left clear small (click)="addGood(item)">
+                <!--<ion-icon name="focus"></ion-icon>-->
+                <img src="assets/imgs/good_gray.svg" alt="" *ngIf="item.isZan == 0">
+                <img src="assets/imgs/good.svg" alt="" *ngIf="item.isZan > 0">
+                <div class="focusNum">{{item.zanNum | number:0}}</div>
+              </button>
+            </ion-col>
+        </ion-row>
+      </ion-item>
+
+
+    </ion-list>
+  </ion-content>
+
+  <ion-footer>
+    <ion-toolbar>
+      <ion-grid>
+        <ion-row>
+          <ion-col text-center col-6 class="focusBtn" *ngIf="userId != topicDetailData.userId">
+            <button ion-button clear (click)="addFocus()">
+              <ion-icon name="focus" class="topicDetailIcon" [ngClass]="{'active':isFocus}"></ion-icon>
+              Focus
+            </button>
+          </ion-col>
+          <ion-col text-center col-6 [class.myself]="userId == topicDetailData.userId" *ngIf="isGroupMember">
+            <button ion-button clear (click)="openModal()">
+              <ion-icon name="news" class="topicDetailIcon"></ion-icon>
+              Chat
+            </button>
+          </ion-col>
+          <ion-col text-center col-6 [class.myself]="userId == topicDetailData.userId" *ngIf="!isGroupMember">
+            <button ion-button clear (click)="openModal()">
+              <ion-icon name="news" class="topicDetailIcon"></ion-icon>
+              Apply
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-footer>
+</div>
+
+
+
+

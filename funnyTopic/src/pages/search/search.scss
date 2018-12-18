@@ -1,0 +1,128 @@
+page-search {
+  .toolbar-md-primary .toolbar-background-md{
+    background-color: #ffffff;
+  }
+  .item-md-light, .item-divider-md-light{
+    background-color: #ffffff;
+  }
+  .toolbar .searchbar-md{
+    padding: 7px 12px;
+  }
+  .searchbar-md .searchbar-input{
+    box-shadow: none;
+    background-color: #f0f0f0;
+    padding: 0 55px;
+  }
+  .searchbar-md .searchbar-search-icon{
+    background-image: url("../assets/imgs/Back.svg");
+    margin-top: -4px;
+    background-size: 15px;
+  }
+  .button-round-md{
+    padding: 0 1.6rem;
+    background-color: #f0f0f0;
+    box-shadow: none;
+  }
+  .item.item-divider-md{
+    border: none;
+    margin-left: -12px;
+    padding-left: 12px;
+    width: calc(100% + 12px);
+    margin-top: 12px;
+  }
+  ion-item-group{
+    padding-left: 12px;
+  }
+  ion-item-group .item-md{
+    padding-left: 0;
+  }
+  ion-item-group .col{
+    padding-left: 0;
+  }
+  ion-item-group .label-md{
+    font-weight: 700;
+    font-size: 1.6rem;
+  }
+  .input-wrapper .label-md{
+    margin: 0 8px 0 0;
+  }
+  .input-wrapper .col{
+    flex-grow: 0;
+  }
+  ion-item-group.searchHistory ion-item.item-md{
+    border-bottom: 1px solid #D9D9D9;
+  }
+  .item-md.item-block .item-inner{
+    padding: 0;border: none;
+  }
+  .button-clear-md.followBtn{
+    color: #333333;
+  }
+  .item-ios .item-button#deleteBtn{
+    padding: 0;margin: 0;
+    width: 100%;
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 1.6rem;
+  }
+
+
+
+  ion-content.active .scroll-content{
+    background-color: #f0f0f0;
+  }
+  .card-md{
+    box-shadow: none;
+  }
+  .card-md .item-md{
+    padding-left: 0;
+  }
+  .card-md{
+    margin: 0;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0 12px;
+    background-color: #ffffff;
+  }
+  .toolbar-title-md{
+    padding: 0;
+    font-size: 1.6rem;
+    color: #000000;
+    font-weight: 700;
+  }
+  .button-inner img{
+    width: 1.2rem;height: 1.2rem;
+    margin-right: 0.3em;
+
+  }
+  .button-clear-md{
+    color: #b3b3b3;
+  }
+  .focusNum{
+    margin-top: 3px;
+  }
+  .card-content-md{
+    padding: 13px 0;
+  }
+  ion-card .col{
+    padding: 5px 0;
+  }
+  .button-clear-md{
+    padding: 0;margin: 0;
+  }
+  .videoThumbnail{
+    position: relative;
+  }
+  .videoThumbnail img.play{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+  }
+}

@@ -1,0 +1,26 @@
+page-account-feedback {
+  #sendBtn{
+    background-color: #e6e6e6;
+    border-radius: 2px;
+    padding:0 5px;
+  }
+  #sendBtn.isSend{
+    background-color: #2582F3;
+  }
+  .bar-button-md{
+    margin: 0;
+    text-transform: none;
+    color: #b3b3b3;
+  }
+  #sendBtn.isSend .bar-button-md{
+    color: #ffffff;
+  }
+  .toolbar-ios ion-title{
+    padding: 0 30px 1px;
+  }
+
+
+  .text-input-md{
+    margin: 0;
+  }
+}

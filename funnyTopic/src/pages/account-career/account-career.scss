@@ -1,0 +1,46 @@
+page-account-career {
+  #sendBtn{
+    background-color: #e6e6e6;
+    border-radius: 2px;
+    padding:0 5px;
+  }
+  #sendBtn.isSend{
+    background-color: #2582F3;
+  }
+  .bar-button-md{
+    margin: 0;
+    text-transform: none;
+    color: #b3b3b3;
+  }
+  #sendBtn.isSend .bar-button-md{
+    color: #ffffff;
+  }
+  .toolbar-ios ion-title{
+    padding: 0 30px 1px;
+  }
+
+
+
+  input.text-input.text-input-md::-webkit-input-placeholder { /* WebKit browsers */
+    color: #b3b3b3;
+    font-size: 1.4rem;
+  }
+  input.text-input.text-input-md:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #b3b3b3;
+  }
+  input.text-input.text-input-md::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #b3b3b3;
+  }
+  input.text-input.text-input-md:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #b3b3b3;
+  }
+  .item-md{
+    padding-left: 0;
+  }
+  .list.list-md{
+    padding: 0 12px;
+  }
+  .list-md .item-input:last-child{
+    border-color: #2582F3;
+  }
+}

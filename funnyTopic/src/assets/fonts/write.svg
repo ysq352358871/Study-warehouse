@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Topic/Topic Details/write</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="首页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="话题详情-精选评论" transform="translate(-275.000000, -29.000000)" fill="#2582F3">
+            <g id="精选评论模块" transform="translate(0.000000, 18.000000)">
+                <g id="精选评论title">
+                    <g id="Group-2" transform="translate(12.000000, 7.000000)">
+                        <g id="Topic/Topic-Details/write" transform="translate(263.000000, 4.000000)">
+                            <g id="text" transform="translate(0.500000, 0.500000)">
+                                <path d="M8.83207827,2.30296896 L5.27474808,5.86029914 L2.31241886,8.82262836 L0.967943763,10.1671035 C0.894898047,10.2401492 0.812006379,10.3886161 0.78826292,10.4932506 L0.337908825,12.4779072 C0.306914622,12.614495 0.390973837,12.6938242 0.52370639,12.6637048 L2.50836298,12.2133507 C2.61748765,12.1885884 2.75901863,12.1091614 2.83451016,12.0336699 L4.17898526,10.6891948 L7.14131448,7.72686553 L10.6986447,4.16953535 L8.83207827,2.30296896 Z M9.55903027,1.57601695 L10.4965047,0.638542563 C10.8847066,0.250340584 11.5160441,0.252278245 11.9050752,0.641309419 L12.3603042,1.09653837 C12.7500343,1.48626845 12.7474375,2.12074246 12.3630711,2.50510896 L11.4255967,3.44258334 L9.55903027,1.57601695 Z" id="Combined-Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

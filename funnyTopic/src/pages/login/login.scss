@@ -1,0 +1,95 @@
+page-login {
+  .content-md{
+    background-image: url("../assets/imgs/Join_bg@3x.png");
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-color: #fff;
+  }
+  .bar-button-default-md{
+    color: #ffffff;
+  }
+  .header-md::after{
+    background-image: none;
+  }
+  .toolbar-background-md{
+    background-color: transparent;
+  }
+  .scroll-content{
+    overflow: hidden;
+    padding-bottom: 0!important;
+  }
+  .list-header-md.item-md{
+    margin: 0;
+    padding: 0;
+    margin-top: 4rem;
+    //margin-bottom: 3rem;
+    border: none;
+  }
+  .label-md{
+    margin: 0;
+    text-align: center;
+    font-size: 3.2rem;
+    color: #333333;
+  }
+  .list-ios{
+    margin: 0;
+    //height: 44.7rem;
+    //position: absolute;
+    //left: 0;bottom: 0;
+    //width: 100%;
+    margin-top: 6.6rem;
+    max-height: 44.7rem;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+  }
+  .list-ios > .item-block:last-child{
+    border: none;
+  }
+  .item-md{
+    padding: 0 4rem;
+  }
+  .item-md.input-has-focus{
+    color: #2582F3;
+  }
+  .list-ios > .item-block:last-child .item-inner{
+    border-bottom: 1px solid #D9D9D9;
+  }
+  .list-ios > .item-block.input-has-focus .item-inner{
+    box-shadow: none;
+    border-color:#2582F3;
+  }
+  .item-md.item-block .item-inner{
+    padding: 0;
+  }
+  .list-ios > .item-block#loginBtn:last-child .item-inner{
+    border: none;
+  }
+  #loginBtn{
+    margin-top: 6.8rem;
+  }
+  .item-md#loginBtn .item-button{
+    padding: 0;
+    margin: 0;
+    width: 6.4rem;height: 6.4rem;
+    border-radius: 100%;
+    box-shadow: none;
+    background-color: #D9D9D9;
+    font-size: 3.4rem;
+  }
+
+
+
+
+
+
+}
+.ion-page.show-page{
+
+}
+
+.ion-page > ion-content {
+  position: relative;
+  //background-color: transparent;
+}

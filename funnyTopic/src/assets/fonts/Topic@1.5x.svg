@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Bottom Bar/icon/Topic</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M21.411223,19.4458334 C21.605441,19.2006818 21.7902835,18.9477642 21.9652089,18.6876222 C23.2501701,16.7766794 24,14.4759058 24,12 C24,5.372583 18.627417,0 12,0 C5.372583,0 0,5.372583 0,12 C0,18.627417 5.372583,24 12,24 C13.8691516,24 15.6384903,23.5726501 17.2156398,22.8103266" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="24" height="24" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Bottom-Bar/My" transform="translate(-24.000000, -23.000000)">
+            <g id="话题">
+                <g transform="translate(22.000000, 23.000000)">
+                    <g id="Bottom-Bar/icon/Topic" transform="translate(2.000000, 0.000000)">
+                        <g id="话题00">
+                            <use id="Oval" stroke="#B3B3B3" mask="url(#mask-2)" stroke-width="2" xlink:href="#path-1"></use>
+                            <g id="Group-2" transform="translate(6.500000, 5.500000)" fill="#B3B3B3">
+                                <rect id="Rectangle" x="1" y="4.19999981" width="10" height="1" rx="0.5"></rect>
+                                <rect id="Rectangle" x="0" y="8.39999962" width="10" height="1" rx="0.5"></rect>
+                                <g id="Group-3" transform="translate(5.831282, 6.517037) rotate(-75.000000) translate(-5.831282, -6.517037) translate(0.331282, 3.517037)">
+                                    <rect id="Rectangle" x="-7.10542736e-15" y="-1.86517468e-14" width="10" height="1" rx="0.5"></rect>
+                                    <rect id="Rectangle" x="0.965925826" y="4.74118095" width="10" height="1" rx="0.5"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

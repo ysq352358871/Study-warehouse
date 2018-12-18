@@ -1,0 +1,145 @@
+page-focus {
+
+  .toolbar-background-md,.fixed-content,.scroll-content{
+    background-color: #ffffff;
+  }
+  .segment-ios .segment-button{
+    border: none;
+    font-size: 1.7rem;
+    font-family: SFUIText-Regular;
+    color: #999999;
+  }
+  .segment-ios .segment-button.segment-activated{
+    background: transparent;
+    color: #333333;
+  }
+
+  .searchbar-md{
+    padding: 0;
+  }
+  .searchbar-md .searchbar-input{
+    border-radius: 100px;
+    box-shadow: none;
+    background-color: #f5f5f5;
+  }
+  .searchbar-md{
+    background-color: #fff;
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+  .searchbar-md .searchbar-input{
+    padding: 0 55px;
+  }
+  .searchbar-md .searchbar-search-icon{
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+
+//  列表
+  .list-md{
+    margin: 0;
+    //border-bottom: 1px solid #e6e6e6;
+    padding: 0 0 0 12px;
+  }
+  .list-md.top{
+    background-color: #F8FAFD;
+  }
+  .list-ios ion-item-options .button{
+    width: 8rem;
+    text-transform:none;
+  }
+  .list-ios .item-block .item-inner{
+    border: none;
+  }
+  .list-md ion-item-sliding{
+      border-bottom: 1px solid #e6e6e6;
+  }
+  .list-md.top ion-item-sliding{
+    background-color: #F8FAFD;
+  }
+  .list-md.top .item.item-block.item-md{
+    background-color: #F8FAFD;
+  }
+
+  //.list-ios > .item-wrapper:last-child .item-block{
+  //  border-bottom: 0.55px solid #e6e6e6;
+  //}
+  .item-md{
+    padding-left: 0;
+  }
+  .list-ios{
+
+  }
+  .list-ios.top{
+
+  }
+  .item-md .item-button{
+    font-size: 1.8rem;
+    margin: 0;
+    background-color: transparent;
+    color: #333333;
+    box-shadow: none;
+  }
+
+//  topic 列表
+  .card-md{
+    box-shadow: none;
+  }
+  .card-md .item-md{
+    padding-left: 0;
+  }
+  .card-md{
+    margin: 0;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+    padding-right: 12px;
+    background-color: #ffffff;
+  }
+  .toolbar-title-md{
+    padding: 0;
+    font-size: 1.6rem;
+    color: #000000;
+    font-weight: 700;
+  }
+  .button-inner img{
+    width: 1.2rem;height: 1.2rem;
+    margin-right: 0.3em;
+
+  }
+  .button-clear-md{
+    color: #b3b3b3;
+  }
+  .focusNum{
+    margin-top: 3px;
+  }
+  .card-content-md{
+    padding: 13px 0;
+  }
+  ion-card .col{
+    padding: 5px 0;
+  }
+  ion-card .col.active{
+    margin-right: 5px;
+  }
+  .button-clear-md{
+    padding: 0;margin: 0;
+  }
+  .videoThumbnail{
+    position: relative;
+  }
+  .videoThumbnail img.play{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+  }
+}

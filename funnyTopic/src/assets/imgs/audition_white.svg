@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Topic/Chat/audition_white@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M19.1659867,9.18165803 C19.863293,9.63361582 19.8611626,10.367765 19.1659867,10.818342 L6.26258475,19.181658 C5.56527845,19.6336158 5,19.3345642 5,18.4967494 L5,1.5032506 C5,0.673028218 5.56740883,0.36776498 6.26258475,0.81834197 L19.1659867,9.18165803 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="15.4285714" height="20" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="首页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="聊天界面-功能展示-试听语音" transform="translate(-32.000000, -459.000000)" stroke="#FFFFFF" stroke-width="2.6">
+            <g id="按住说话" transform="translate(0.000000, 427.000000)">
+                <g id="试听" transform="translate(14.000000, 14.000000)">
+                    <g id="Topic/Chat/audition_white" transform="translate(18.000000, 18.000000)">
+                        <use id="Triangle" mask="url(#mask-2)" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

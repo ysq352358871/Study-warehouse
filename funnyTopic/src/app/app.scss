@@ -1,0 +1,197 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+#circle{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 1.2rem;
+  color: red;
+  z-index: 2;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100%;
+  background-color: #ffffff;
+  border: 1px solid #eee;
+}
+.tabs-md .tabbar{
+  background-color: #fff;
+}
+.tab-button-icon.icon.icon-md.ion-md-publish{
+  width: 4.5rem;
+  height: 4.5rem;
+  background: #2582F3;
+  border-radius: 100%;
+  opacity: 1;
+  margin-top: -1.8rem;
+  position: relative;
+}
+.tab-button-icon.icon.icon-md.ion-md-publish:before{
+  min-width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  top: 0;bottom: 0;left: 0;right: 0;
+  margin: auto;
+}
+.tab-button.has-title.has-icon{
+  overflow: visible;
+}
+
+
+.toolbar.toolbar-md{
+  min-height: 44px;
+  padding: 0;
+}
+
+
+.segment-md .segment-button{
+  border: none;
+  font-size:1.7rem;
+}
+.hot.ion-md-arrow-dropdown:before{
+  content: "";
+
+}
+.hot.ion-md-arrow-dropdown:after{
+  content: "\f280";
+  margin-left: 0.5rem;
+}
+.segment-md .segment-button ion-icon.hot{
+  font-size: 1.7rem;
+  color: #999999;
+}
+.segment-md .segment-button ion-icon.hot.a{
+  color: #000;
+}
+.toolbar .segment-md .segment-button.segment-activated ion-icon.hot.a:after{
+  content: "\f286";
+}
+
+//ion-modal{
+//  top: 4.4rem;
+//}
+
+
+//消息提示框
+.toast-md .toast-wrapper{
+  width: 159px;
+  background: rgba(0,0,0,0.68);
+  border-radius: 8px;
+  text-align: center;
+}
+ion-modal.show-page.hot{
+  top: 4.4rem;
+}
+ion-modal.show-page.hot .card-md#hotMenu{
+  margin-top: 0;
+}
+
+// 更新版本提示框
+.updateVersion{
+  .alert-wrapper{
+    box-shadow: none;
+    border-radius: 8px;
+  }
+  .alert-head{
+    border-bottom: 1px solid #D9D9D9;
+  }
+  .alert-button{
+    width: 100%;
+  }
+  .alert-button .button-inner {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-family: SFUIText-Regular;
+    font-size: 1.6rem;
+    color: #2582F3;
+    text-transform:none;
+  }
+  .alert-sub-title{
+    font-size: 1.4rem;
+    color: #333333;
+    text-align: center;
+  }
+
+
+
+}
+
+.updateGender{
+  .alert-wrapper{
+    box-shadow: none;
+    border-radius: 8px;
+  }
+  .alert-head{
+    border: none;
+    padding: 12px 24px 12px;
+  }
+  .alert-radio-icon{
+    left: calc(100% - 30px);
+  }
+}
+
+
+
+
+//  清除缓存弹窗样式
+.clearCache{
+  .action-sheet-container{
+    padding: 12px;
+  }
+  .action-sheet-group{
+    background: #FFFFFF;
+    border-radius: 8px;
+  }
+  .action-sheet-group .button-inner{
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .action-sheet-group:first-child{
+    padding-top: 0;
+    margin-bottom: 12px;
+
+  }
+  .action-sheet-group:last-child{
+    padding-bottom: 0;
+  }
+  .action-sheet-button{
+    font-family: SFUIText-Regular;
+    font-size: 1.6rem;
+    color: #F32525;
+  }
+  .action-sheet-button.action-sheet-cancel {
+    color: #2582F3;
+  }
+
+}
+
+
+//申请入群样式
+.toast-md.applyIntoGroup{
+  .toast-wrapper{
+    left: 10px;
+    right: 10px;
+    width: auto;
+    bottom: 10px;
+    border-radius:4px;
+  }
+}

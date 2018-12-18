@@ -1,0 +1,81 @@
+img-chat-ele {
+  .chatBox{
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .chatBox:after{
+    display: block;
+    width: 100%;
+    content: "";
+    clear: both;
+  }
+  .chatBox p.userName{
+    margin-top: 0;margin-bottom: 3px;
+    text-align: right;
+    padding-right: 56px;font-family:SFNSText;
+    font-size: 13px;
+    color: #999999;
+    letter-spacing: 0;
+    line-height: 18px;
+  }
+  .avatar{
+    margin: 0  0 8px 16px;
+    min-width: 40px;
+    min-height: 40px;
+    display: inline-block;
+    float: right;
+  }
+  .avatar img{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+  }
+
+  .chatContentBox{
+    display: inline-block;
+    //padding: 10px;
+    position: relative;
+    //background-color:#2582F3;
+    //min-height: 42px;
+    min-width: 4rem;
+    float: right;
+    border-radius: 4px;
+    color: #ffffff;
+    max-width: 20rem;
+  }
+  //.chatContentBox em{
+  //  content: "";
+  //  width: 0;
+  //  height: 0;
+  //  border-top: 10px solid transparent;
+  //  border-bottom: 10px solid transparent;
+  //  border-left: 10px solid #2582F3;
+  //  position: absolute;
+  //  top:5px;right:-8px;
+  //}
+  //.chatContentBox p{
+  //  margin: 0;
+  //  padding: 0;
+  //  line-height: 20px;
+  //}
+  .chatContentBox img{
+    text-align: center;
+    border-radius: 4px;
+  }
+
+  // 左边模式
+  .chatBox.left p.userName{
+    text-align: left;
+    padding-left: 56px;
+    padding-right: 0;
+  }
+  .chatBox.left .avatar{
+    float: left;
+    margin: 0 16px 8px 0;
+  }
+  .chatBox.left .chatContentBox{
+    float: left;
+  }
+}

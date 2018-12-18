@@ -1,0 +1,29 @@
+page-account-setting {
+  .toolbar-background-md{
+    background-color: #ffffff;
+  }
+  .fixed-content{
+    background-color: #f5f5f5;
+  }
+
+  .item-md.item-block .item-inner{
+    padding-right: 0;
+  }
+  .list.list-md{
+    margin: 0;
+    margin-top: 10px;
+    background-color: #ffffff;
+    padding: 0 12px;
+  }
+  .item-md{
+    padding-left: 0;
+  }
+  .item-inner > ion-icon{
+    min-height: unset;
+    font-size: 1.8rem;
+    color: #999;
+  }
+  .item-md ion-icon[item-end]{
+    margin-right: 0;
+  }
+}

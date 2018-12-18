@@ -1,0 +1,44 @@
+.ion-md-myIcon:before{
+  content: url("../assets/fonts/Topic@1.5x.svg");
+}
+//.ion-md-myIcon-outline:before {
+//  content: url("../assets/fonts/Topic_click@1.5x.svg");
+//}
+.tab-button[aria-selected=false] .ion-md-myIcon:before {
+  content: url("../assets/fonts/Topic@1.5x.svg");
+}
+
+.tab-button[aria-selected=true] .ion-md-myIcon:before {
+  content: url("../assets/fonts/Topic_click@1.5x.svg");
+}
+.ion-md-news:before{
+  content: url("../assets/fonts/News@1.5x.svg");
+}
+.tab-button[aria-selected=true] .ion-md-news:before{
+  content: url("../assets/fonts/News_click@1.5x.svg");
+}
+.ion-md-publish:before{
+  content: url("../assets/fonts/publish@1.5x.svg");
+}
+//.tab-button[aria-selected=true] .ion-md-publish:before{
+//  content: url("../assets/fonts/Account_click@1.5x.svg");
+//}
+
+.ion-md-focus:before{
+  content: url("../assets/fonts/Focus@1.5x.svg");
+}
+.tab-button[aria-selected=true] .ion-md-focus:before{
+  content: url("../assets/fonts/Focus_click@1.5x.svg");
+}
+.topicDetailIcon.ion-md-focus.active:before{
+  content: url("../assets/fonts/Focus_click@1.5x.svg");
+}
+
+.ion-md-account:before{
+   content: url("../assets/fonts/Account@1.5x.svg");
+ }
+.tab-button[aria-selected=true] .ion-md-account:before{
+  content: url("../assets/fonts/Account_click@1.5x.svg");
+}
+
+

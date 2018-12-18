@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Bottom Bar/icon/publish@1.5x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Bottom-Bar/icon/publish" fill="#FFFFFF">
+            <g id="Combined-Shape">
+                <path d="M10.5,11 L1.50130749,11 C0.666946292,11 0,11.6715729 0,12.5 C0,13.3342028 0.672158257,14 1.50130749,14 L10.5,14 L10.5,22.9986925 C10.5,23.8330537 11.1715729,24.5 12,24.5 C12.8342028,24.5 13.5,23.8278417 13.5,22.9986925 L13.5,14 L22.4986925,14 C23.3330537,14 24,13.3284271 24,12.5 C24,11.6657972 23.3278417,11 22.4986925,11 L13.5,11 L13.5,2.00130749 C13.5,1.16694629 12.8284271,0.5 12,0.5 C11.1657972,0.5 10.5,1.17215826 10.5,2.00130749 L10.5,11 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Bottom Bar/icon/Account</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="12" cy="6" r="6"></circle>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="12" height="12" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <path d="M23,23 C23,16.9248678 18.0751322,12 12,12 C5.92486775,12 1,16.9248678 1,23 C1,24.0751322 23,24.0751322 23,23 Z" id="path-3"></path>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="22" height="11.8063492" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="首页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-329.000000, -1302.000000)" id="Bottom-Bar/Topic" stroke-width="2" stroke="#B3B3B3">
+            <g transform="translate(0.000000, 1279.000000)">
+                <g id="我的" transform="translate(329.000000, 23.000000)">
+                    <g id="Bottom-Bar/icon/Topic">
+                        <use id="Oval" mask="url(#mask-2)" xlink:href="#path-1"></use>
+                        <use id="Oval" mask="url(#mask-4)" xlink:href="#path-3"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

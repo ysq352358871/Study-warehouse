@@ -1,0 +1,160 @@
+<!--
+  Generated template for the SearchPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-toolbar>
+    <ion-searchbar id="search" (ionInput)="searchTopic($event)" placeholder="X特遣队" (click)="goBack($event)" (ionCancel)="onCancel($event)"></ion-searchbar>
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content [class.active] = 'isSearchTopic'>
+  <ion-item-group *ngIf="!isSearchTopic">
+    <ion-item-divider color="light">Hot search</ion-item-divider>
+    <ion-item>
+      <ion-row>
+        <ion-col *ngFor="let item of hotWord" (click)="searchByHotWordRecord(item.hotName)">
+          <button ion-button color="light" round>{{item.hotName}}</button>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+  </ion-item-group>
+  <div *ngIf="recordArr.length > 0">
+    <ion-item-group class="searchHistory" *ngIf="!isSearchTopic">
+      <ion-item-divider color="light">Search record</ion-item-divider>
+      <ion-item *ngFor="let item of recordArr">
+        <h2 class="name" item-start>{{item.recordText}}</h2>
+        <button ion-button item-end class="followBtn" clear>
+          <ion-icon name="close" (click) = 'deleteRecordById(item.id)'></ion-icon>
+        </button>
+      </ion-item>
+      <ion-item mode="ios" class="messageFlag">
+        <button ion-button full id="deleteBtn" icon-left (click)="deleteAllRecord()">
+          <ion-icon name="ios-trash-outline"></ion-icon>
+          <span>Delete all records</span>
+        </button>
+      </ion-item>
+    </ion-item-group>
+  </div>
+
+
+
+
+  <!--<ion-card (click)="goTopicDetail()" *ngIf="isSearchTopic">-->
+    <!--<ion-item>-->
+      <!--<ion-title>为什么现在很多人用微信而不是QQ?</ion-title>-->
+      <!--&lt;!&ndash;<h2>Marty McFly</h2>&ndash;&gt;-->
+      <!--&lt;!&ndash;<p>November 5, 1955</p>&ndash;&gt;-->
+    <!--</ion-item>-->
+
+    <!--<img src="assets/imgs/card-sf.png">-->
+    <!--<ion-card-content>-->
+      <!--<p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>-->
+    <!--</ion-card-content>-->
+
+    <!--<ion-row>-->
+      <!--<ion-col>-->
+        <!--<button ion-button icon-left clear small>-->
+          <!--&lt;!&ndash;<ion-icon name="focus"></ion-icon>&ndash;&gt;-->
+          <!--<img src="assets/fonts/Focus@1.5x.svg" alt="">-->
+          <!--<div class="focusNum">12 Likes</div>-->
+        <!--</button>-->
+      <!--</ion-col>-->
+      <!--<ion-col>-->
+        <!--<button ion-button icon-left clear small>-->
+          <!--<img src="assets/fonts/News@1.5x.svg" alt="">-->
+          <!--<div>9,999</div>-->
+        <!--</button>-->
+      <!--</ion-col>-->
+      <!--<ion-col center text-center>-->
+        <!--<button ion-button icon-left clear small>-->
+          <!--2017-12-06-->
+        <!--</button>-->
+      <!--</ion-col>-->
+    <!--</ion-row>-->
+
+  <!--</ion-card>-->
+  <div *ngIf="isSearchTopic">
+    <div *ngFor="let item of topicList">
+      <ion-card *ngIf="!item.video" (click)="goTopicDetail(item.id,item.userId)">
+        <ion-item>
+          <ion-title>{{item.title}}</ion-title>
+          <!--<h2>Marty McFly</h2>-->
+          <!--<p>November 5, 1955</p>-->
+        </ion-item>
+        <ion-card-content style="padding:0">
+          <p>{{item.text}}</p>
+        </ion-card-content>
+        <ion-grid style="padding: 0">
+          <ion-row *ngIf="item.picUrl">
+            <ion-col col-4  *ngFor="let picItem of item.picUrl;let i = index" [ngClass]="{'active':i == 0}">
+              <img src="{{picItem}}">
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        <ion-row>
+          <ion-col>
+            <button ion-button icon-left clear small>
+              <!--<ion-icon name="focus"></ion-icon>-->
+              <img src="assets/fonts/Focus@1.5x.svg" alt="">
+              <div class="focusNum">{{item.collectionNum | number:0}} Likes</div>
+            </button>
+          </ion-col>
+          <ion-col>
+            <button ion-button icon-left clear small>
+              <img src="assets/fonts/News@1.5x.svg" alt="">
+              <div>{{item.chatNum | number:0}}</div>
+            </button>
+          </ion-col>
+          <ion-col center text-center>
+            <button ion-button icon-left clear small>
+              {{item.createTime*1000 | date:'yyyy-MM-dd'}}
+            </button>
+          </ion-col>
+        </ion-row>
+
+      </ion-card>
+      <ion-card *ngIf="item.video" (click)="goTopicDetail(item.id,item.userId)">
+
+        <ion-item>
+          <ion-title>{{item.title}}</ion-title>
+          <!--<h2>Marty McFly</h2>-->
+          <!--<p>November 5, 1955</p>-->
+        </ion-item>
+        <div class="videoThumbnail">
+          <img src="assets/imgs/Play@1.5x.svg" alt="" class="play">
+          <img src="{{item.previewImg}}">
+        </div>
+        <ion-card-content>
+          <p>{{item.text}}</p>
+        </ion-card-content>
+        <ion-row>
+          <ion-col>
+            <button ion-button icon-left clear small>
+              <!--<ion-icon name="focus"></ion-icon>-->
+              <img src="assets/fonts/Focus@1.5x.svg" alt="">
+              <div class="focusNum">{{item.collectionNum | number:0}} Likes</div>
+            </button>
+          </ion-col>
+          <ion-col>
+            <button ion-button icon-left clear small>
+              <img src="assets/fonts/News@1.5x.svg" alt="" >
+              <div>{{item.chatNum | number:0}}</div>
+            </button>
+          </ion-col>
+          <ion-col center text-center>
+            <button ion-button icon-left clear small>
+              {{item.createTime*1000 | date:'yyyy-MM-dd'}}
+            </button>
+          </ion-col>
+        </ion-row>
+
+      </ion-card>
+    </div>
+  </div>
+</ion-content>

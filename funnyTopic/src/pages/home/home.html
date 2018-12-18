@@ -1,0 +1,118 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-segment>
+      <ion-buttons style="order:0">
+        <button ion-button  (click)="goCountryList()" style="text-transform:none">
+          <p>{{countryObj.longName}}</p>
+          <ion-icon name="md-arrow-dropdown" style="margin-left: 6px"></ion-icon>
+        </button>
+      </ion-buttons>
+      <ion-segment-button value="Latest" (click)="requestLatest()">
+        <ion-icon   class="hot">Latest</ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="hot" id='hot' (click)="openModal()">
+        <ion-icon name="arrow-dropdown" class="hot a">Hot</ion-icon>
+      </ion-segment-button>
+      <ion-buttons end>
+        <button ion-button icon-only (click)="goSearch()">
+          <ion-icon name="search"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-segment>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-refresher (ionRefresh)="refresh($event)" mode="ios">
+    <ion-refresher-content
+      pullingIcon="arrow-dropdown"
+      pullingText="Pull to refresh"
+      refreshingSpinner="circles"
+      refreshingText="Refreshing..." mode="ios">
+    </ion-refresher-content>
+  </ion-refresher>
+  <div *ngFor="let item of topicList">
+    <ion-card *ngIf="!item.video" (click)="goTopicDetail(item.id,item.userId)">
+      <ion-item>
+        <ion-title>{{item.title}}</ion-title>
+      </ion-item>
+      <ion-card-content style="padding:0">
+        <p>{{item.text}}</p>
+      </ion-card-content>
+      <ion-grid style="padding: 0">
+        <ion-row *ngIf="item.picUrl">
+          <ion-col col-4  *ngFor="let picItem of item.picUrl;let i = index" [ngClass]="{'active':i == 0}">
+            <img src="{{picItem}}">
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-row>
+        <ion-col>
+          <button ion-button icon-left clear small>
+            <img src="assets/fonts/Focus@1.5x.svg" alt="">
+            <div class="focusNum">{{item.collectionNum | number:0}} Likes</div>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button icon-left clear small>
+            <img src="assets/fonts/News@1.5x.svg" alt="">
+            <div>{{item.chatNum | number:0}}</div>
+          </button>
+        </ion-col>
+        <ion-col center text-center>
+          <button ion-button icon-left clear small>
+            {{item.createTime*1000 | date:'yyyy-MM-dd'}}
+          </button>
+        </ion-col>
+      </ion-row>
+
+    </ion-card>
+
+
+    <ion-card *ngIf="item.video" (click)="goTopicDetail(item.id,item.userId)">
+
+      <ion-item>
+        <ion-title>{{item.title}}</ion-title>
+        <!--<h2>Marty McFly</h2>-->
+        <!--<p>November 5, 1955</p>-->
+      </ion-item>
+      <div class="videoThumbnail">
+        <img src="assets/imgs/Play@1.5x.svg" alt="" class="play">
+        <img src="{{item.previewImg}}">
+      </div>
+      <ion-card-content>
+        <p>{{item.text}}</p>
+      </ion-card-content>
+      <ion-row>
+        <ion-col>
+          <button ion-button icon-left clear small>
+            <!--<ion-icon name="focus"></ion-icon>-->
+            <img src="assets/fonts/Focus@1.5x.svg" alt="">
+            <div class="focusNum">{{item.collectionNum | number:0}} Likes</div>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button icon-left clear small>
+            <img src="assets/fonts/News@1.5x.svg" alt="" >
+            <div>{{item.chatNum | number:0}}</div>
+          </button>
+        </ion-col>
+        <ion-col center text-center>
+          <button ion-button icon-left clear small>
+            {{item.createTime*1000 | date:'yyyy-MM-dd'}}
+          </button>
+        </ion-col>
+      </ion-row>
+
+    </ion-card>
+  </div>
+
+
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="Loading more data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Topic/Chat/voice_white</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="首页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="聊天界面-功能展示-删除语音" transform="translate(-156.000000, -495.000000)">
+            <g id="按住说话" transform="translate(0.000000, 427.000000)">
+                <g transform="translate(138.000000, 50.000000)" id="Topic/Chat/voice_white">
+                    <g transform="translate(18.000000, 18.000000)">
+                        <g id="语音" transform="translate(11.200000, 0.000000)">
+                            <path d="M22.4125,52.7328 L22.4125,60.8 L33.6125,60.8 C34.4957,60.8 35.2125,61.5168 35.2125,62.4 C35.2125,63.2832 34.4957,64 33.6125,64 L8.0125,64 C7.1293,64 6.4125,63.2832 6.4125,62.4 C6.4125,61.5168 7.1293,60.8 8.0125,60.8 L19.2125,60.8 L19.2125,52.7328 C8.4877,51.912 0.0125,42.9296 0.0125,32 C0.0125,31.1168 0.7293,30.4 1.6125,30.4 C2.4957,30.4 3.2125,31.1168 3.2125,32 C3.2125,41.7056 11.1069,49.6 20.8125,49.6 C30.5165,49.6 38.4125,41.7056 38.4125,32 C38.4125,31.1168 39.1293,30.4 40.0125,30.4 C40.8957,30.4 41.6125,31.1168 41.6125,32 C41.6125,42.9296 33.1357,51.912 22.4125,52.7328 Z" id="Shape" fill="#FFFFFF"></path>
+                            <path d="M33.6125,12.8 L33.5341,32 C33.5341,38.616 27.4285,44.7392 20.8125,44.7392 C14.1965,44.7392 8.0477,38.8144 8.0477,32.1984 L8.0125,12.8 C8.0125,6.184 14.1965,0 20.8125,0 C27.4285,0 33.6125,6.184 33.6125,12.8 Z" id="Path" fill="#FFFFFF"></path>
+                            <circle id="Oval" fill="#2582F3" cx="27.6" cy="11.6" r="2"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

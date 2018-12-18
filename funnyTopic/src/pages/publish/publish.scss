@@ -1,0 +1,98 @@
+page-publish {
+  #sendBtn{
+    background-color: #e6e6e6;
+    border-radius: 2px;
+    padding:0 5px;
+  }
+  #sendBtn.isSend{
+    background-color: #2582F3;
+  }
+  .bar-button-md{
+    margin: 0;
+    text-transform: none;
+    color: #b3b3b3;
+  }
+  #sendBtn.isSend .bar-button-md{
+    color: #ffffff;
+  }
+
+  #btnLists .toolbar-content-ios{
+    display: flex;
+    overflow: hidden;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .text-input-md{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 36px;
+    border-bottom: 1px solid #2582F3;
+  }
+
+  #textArea{
+    width: 100%;height: 100%;
+    margin-top: 25px;
+  }
+  #prompt{
+    font-family: SFUIText-Regular;
+    font-size: 1.4rem;
+    color: #B3B3B3;
+    letter-spacing: 0;
+  }
+  .uploadWrap{
+    position: relative;
+    //min-width: 400px;
+    text-align: center;
+  }
+  .uploadWrap .targetImg{
+    margin: 0 auto;
+  }
+  .uploadWrap .mask{
+    position: absolute;
+    top:0;bottom: 0;
+    margin: auto;
+    background-color: rgba(255,255,255,0.9);
+    width: 100%;
+  }
+  .uploadWrap .uploadLoadding{
+    position: absolute;
+    left: 0;top:0;bottom: 0;right: 0;
+    margin: auto;
+  }
+  .promptText{
+    color: #333;
+    position: absolute;left: 0;top:calc(50% - 30px);right: 0;
+    margin: 0 auto;
+  }
+
+  #videoThumbnail{
+    text-align: center;
+    position: relative;
+  }
+  #videoThumbnail #play{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+  }
+  video#video{
+    display: none;
+  }
+
+  .video-container{
+    display: none;
+  }
+}

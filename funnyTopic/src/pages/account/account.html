@@ -1,0 +1,213 @@
+<!--
+  Generated template for the AccountPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-toolbar mode="ios" [class.isScroll]="isScroll">
+    <!--<ion-buttons start>-->
+      <!--<button ion-button icon-only color="royal">-->
+        <!--<ion-icon name="search"></ion-icon>-->
+      <!--</button>-->
+    <!--</ion-buttons>-->
+    <ion-title>My</ion-title>
+    <ion-buttons end (click)="goSetting()">
+      <button ion-button icon-only color="royal">
+        <ion-icon name="ios-settings-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content scrollDownOnLoad="true" (ionScroll)="scrollHandler($event)">
+  <ion-list no-lines>
+    <!--<button ion-item >-->
+      <!---->
+    <!--</button>-->
+    <ion-avatar item-start>
+      <img src="{{currentUserDataFromServe.userAvatar}}">
+    </ion-avatar>
+  </ion-list>
+  <ion-list no-lines id="name">{{currentUserDataFromServe.nickName}}</ion-list>
+  <ion-list no-lines id="professional">{{currentUserDataFromServe.userCareer}}</ion-list>
+  <ion-list no-lines id="editBtn">
+    <button ion-button icon-left (click)="goCenter()">
+      <ion-icon name="ios-create-outline"></ion-icon>
+      Edit
+    </button>
+  </ion-list>
+
+  <!--<div id="contentWrap">-->
+    <ion-segment [(ngModel)]="selectKind">
+      <ion-segment-button value="topic" (ionSelect)="getPublisheredTopic()">
+        Topic {{currentUserDataFromServe.myTopicNum}}
+      </ion-segment-button>
+      <ion-segment-button value="following" (ionSelect)="getFollowedUser()">
+        Following {{currentUserDataFromServe.followingNum}}
+      </ion-segment-button>
+      <ion-segment-button value="fans" (ionSelect)="getMyFans()">
+        Fans {{currentUserDataFromServe.fansNum}}
+      </ion-segment-button>
+    </ion-segment>
+  <!--</div>-->
+  <div [ngSwitch]="selectKind">
+    <ion-list *ngSwitchCase="'topic'" class="selectList">
+      <!--<div >-->
+        <!--<ion-card>-->
+          <!--<ion-item>-->
+            <!--<ion-title>adasdada</ion-title>-->
+          <!--</ion-item>-->
+          <!--<ion-card-content style="padding:0">-->
+            <!--<p>fadfsfasdada</p>-->
+          <!--</ion-card-content>-->
+          <!--<ion-grid style="padding: 0">-->
+            <!--&lt;!&ndash;<ion-row *ngIf="item.picUrl">&ndash;&gt;-->
+              <!--&lt;!&ndash;<ion-col col-4  *ngFor="let picItem of item.picUrl;let i = index" [ngClass]="{'active':i == 0}">&ndash;&gt;-->
+                <!--&lt;!&ndash;<img src="{{picItem}}">&ndash;&gt;-->
+              <!--&lt;!&ndash;</ion-col>&ndash;&gt;-->
+            <!--&lt;!&ndash;</ion-row>&ndash;&gt;-->
+          <!--</ion-grid>-->
+          <!--<ion-row>-->
+            <!--<ion-col>-->
+              <!--<button ion-button icon-left clear small>-->
+                <!--<img src="assets/fonts/Focus@1.5x.svg" alt="">-->
+                <!--<div class="focusNum">11 Likes</div>-->
+              <!--</button>-->
+            <!--</ion-col>-->
+            <!--<ion-col>-->
+              <!--<button ion-button icon-left clear small>-->
+                <!--<img src="assets/fonts/News@1.5x.svg" alt="">-->
+
+                <!--<div>222</div>-->
+              <!--</button>-->
+            <!--</ion-col>-->
+            <!--<ion-col center text-center>-->
+              <!--<button ion-button icon-left clear small>-->
+                <!--2017-18-->
+              <!--</button>-->
+            <!--</ion-col>-->
+          <!--</ion-row>-->
+
+        <!--</ion-card>-->
+      <!--</div>-->
+
+
+
+
+
+      <div *ngFor="let item of topicList" style="padding-left: 12px;background-color: #fff;">
+        <ion-card  *ngIf="!item.video"  (click)="goTopicDetail(item.id,item.userId)">
+          <ion-item>
+            <ion-title>{{item.title}}</ion-title>
+          </ion-item>
+          <ion-card-content style="padding:0">
+            <p>{{item.text}}</p>
+          </ion-card-content>
+          <ion-grid style="padding: 0">
+            <ion-row *ngIf="item.picUrl">
+              <ion-col col-4  *ngFor="let picItem of item.picUrl;let i = index" [ngClass]="{'active':i == 0}">
+                <img src="{{picItem}}">
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          <ion-row>
+            <ion-col>
+              <button ion-button icon-left clear small>
+                <img src="assets/fonts/Focus@1.5x.svg" alt="">
+                <div class="focusNum">{{item.collectionNum | number:0}} Likes</div>
+              </button>
+            </ion-col>
+            <ion-col>
+              <button ion-button icon-left clear small>
+                <img src="assets/fonts/News@1.5x.svg" alt="">
+
+                <div>{{item.chatNum | number:0}}</div>
+              </button>
+            </ion-col>
+            <ion-col center text-center>
+              <button ion-button icon-left clear small>
+                {{item.createTime*1000 | date:'yyyy-MM-dd'}}
+              </button>
+            </ion-col>
+          </ion-row>
+
+        </ion-card>
+
+
+        <ion-card *ngIf="item.video" (click)="goTopicDetail()">
+
+          <ion-item>
+            <ion-title>{{item.title}}</ion-title>
+            <!--<h2>Marty McFly</h2>-->
+            <!--<p>November 5, 1955</p>-->
+          </ion-item>
+          <div class="videoThumbnail">
+            <img src="assets/imgs/Play@1.5x.svg" alt=""class="play">
+            <img src="{{item.previewImg}}">
+          </div>
+          <ion-card-content>
+            <p>{{item.text}}</p>
+          </ion-card-content>
+          <ion-row>
+            <ion-col>
+              <button ion-button icon-left clear small>
+                <!--<ion-icon name="focus"></ion-icon>-->
+                <img src="assets/fonts/Focus@1.5x.svg" alt="">
+                <div class="focusNum">{{item.collectionNum | number:0}} Likes</div>
+              </button>
+            </ion-col>
+            <ion-col>
+              <button ion-button icon-left clear small>
+                <img src="assets/fonts/News@1.5x.svg" alt="" >
+                <div>{{item.chatNum | number:0}}</div>
+              </button>
+            </ion-col>
+            <ion-col center text-center>
+              <button ion-button icon-left clear small>
+                {{item.createTime*1000 | date:'yyyy-MM-dd'}}
+              </button>
+            </ion-col>
+          </ion-row>
+
+        </ion-card>
+      </div>
+    </ion-list>
+
+
+    <ion-list *ngSwitchCase="'following'" class="selectList following">
+      <div style="width: 100%;padding-left: 12px;background-color: #fff" *ngFor="let item of followedUser">
+        <ion-item *ngIf="item.isShow">
+          <ion-avatar item-start>
+            <img src="{{item.userAvatar}}">
+          </ion-avatar>
+          <h2 class="name" item-start>{{item.nickName}}</h2>
+          <button ion-button item-end class="followBtn" [class.isFollow]="item.isFollow" (click)="cancelOrAddFollowed(item,'follow')">
+            <ion-icon name="add" [name]="item.isFollow ? 'checkmark' : 'add'"></ion-icon>
+            Follow
+          </button>
+        </ion-item>
+      </div>
+
+    </ion-list>
+
+
+
+
+    <ion-list *ngSwitchCase="'fans'" class="selectList">
+      <div style="width: 100%;padding-left: 12px;background-color: #fff" *ngFor="let item of fansList">
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="{{item.userAvatar}}">
+          </ion-avatar>
+          <h2 class="name" item-start>{{item.nickName}}</h2>
+          <button ion-button item-end class="followBtn" [class.isFollow]="item.mutual == 1" (click)="cancelOrAddFollowed(item,'fans')">
+            <ion-icon name="add" [name]="item.mutual == 1 ? 'checkmark' : 'add'"></ion-icon>
+            Follow
+          </button>
+        </ion-item>
+      </div>
+    </ion-list>
+  </div>
+</ion-content>

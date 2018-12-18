@@ -1,0 +1,47 @@
+<!--
+  Generated template for the ValidationPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>validation</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+    <div *ngFor="let item of conversations">
+      <div *ngIf="item.conversationType == 'single' && item.latestMessage.extras.type == 'addGroup'">
+        <ion-item *ngIf="item.latestMessage.from.username != userInfo.username"  (click)="goValidationDetailPage(item.latestMessage.from.username,item.latestMessage.extras.groupName,item.latestMessage.extras.groupId,item.latestMessage.extras.topicId,item.latestMessage.extras.serveGroupId,item.latestMessage.extras.applyUserId,item.latestMessage.from.nickname,item.latestMessage.from.avatarThumbPath)">
+          <ion-thumbnail item-start>
+            <img src="{{item.latestMessage.from.avatarThumbPath}}">
+          </ion-thumbnail>
+          <h2 style="margin: 0">{{item.latestMessage.from.nickname}}</h2>
+          <p class="text">apply to</p>
+          <p class="text">{{item.latestMessage.extras.groupName}}</p>
+          <div clear item-end class="numAndTime">
+            <button ion-button color="primary" (click)="send(item.latestMessage.from.username,item.latestMessage.extras.groupName,item.latestMessage.extras.groupId,item.latestMessage.extras.topicId,item.latestMessage.extras.serveGroupId,item.latestMessage.extras.applyUserId,item.latestMessage.from.nickname)">Agree</button>
+          </div>
+        </ion-item>
+        <ion-item *ngIf="item.latestMessage.from.username == userInfo.username">
+          <ion-thumbnail item-start>
+            <img src="{{item.latestMessage.target.avatarThumbPath}}">
+          </ion-thumbnail>
+          <h2 style="margin: 0">{{item.latestMessage.target.nickname}}</h2>
+          <p class="text">apply to</p>
+          <p class="text">{{item.latestMessage.extras.groupName}}</p>
+          <div clear item-end class="numAndTime">
+            <button ion-button color="primary" class="actived" *ngIf="item.latestMessage.extras.status=='agree'">Agreed</button>
+            <button ion-button color="primary" class="actived" *ngIf="item.latestMessage.extras.status=='refuse'">Refused</button>
+          </div>
+        </ion-item>
+      </div>
+
+    </div>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,32 @@
+<!-- Generated template for the RecordComponent component -->
+<div id="micWrap" (pan)="panEvent($event)" *ngIf="!isPlayAudition">
+  <div id="audition" [class.active] = "isAudition" *ngIf="isRecording">
+    <em></em>
+  </div>
+  <div id="cancelAudition" [class.active] = "isCancel" *ngIf="isRecording">
+    <em></em>
+  </div>
+  <div id="circle" *ngIf="isRecording"></div>
+  <div id="microphoneBtn" (press)="pressEvent($event)" (touchend)="touchEndRecord($event)" [class.active] = "isRecording">
+    <img src="assets/imgs/voice_white.svg" alt="">
+    <p id="text" [class.active] = "isRecording">{{recordTime}}</p>
+  </div>
+</div>
+<div id="playAuditionWrap" *ngIf="isPlayAudition">
+  <div id="playAuditionBtn" (click)="playAudition()" [class.active] = 'isStartPlayAudition'>
+    <div id="playAuditionBtnInner"></div>
+    <em></em>
+    <p class="playAuditionText">{{fileTime}}</p>
+    <!--播放进度条-->
+    <div class="playProgress left">
+      <div class="circleProgress leftCircle" id="playProgressLeft"></div>
+    </div>
+    <div class="playProgress right">
+      <div class="circleProgress rightCircle" id="playProgressRight"></div>
+    </div>
+  </div>
+  <ul class="playAuditionBtnList">
+    <li (click)="cancelRecord()">Cancel</li>
+    <li (click)="sendRecord()">Send</li>
+  </ul>
+</div>

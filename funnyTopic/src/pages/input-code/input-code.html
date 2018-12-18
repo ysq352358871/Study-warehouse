@@ -1,0 +1,30 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <!--<ion-title>login</ion-title>-->
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-list mode="ios">
+    <ion-list-header>Join Us</ion-list-header>
+    <div style="position: relative;">
+      <ion-item>
+        <ion-label floating mode="ios" >Code</ion-label>
+        <ion-input type="text" mode="ios" [(ngModel)] = "accept"></ion-input>
+      </ion-item>
+      <ion-buttons id="acceptCode" (click)="getCode()" [class.getCodeAction]="isGetCode">
+        <button ion-button>{{acceptCodeCon}}</button>
+      </ion-buttons>
+    </div>
+
+    <ion-item id="loginBtn">
+      <button ion-button (click)="sendCode()">
+        <ion-icon name="md-arrow-forward"></ion-icon>
+      </button>
+    </ion-item>
+  </ion-list>
+</ion-content>

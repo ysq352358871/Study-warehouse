@@ -1,0 +1,30 @@
+<!--
+  Generated template for the AccountCareerPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header mode="ios">
+  <ion-toolbar mode="ios">
+    <ion-buttons start (click)="back()">
+      <button ion-button icon-only color="royal">
+        <ion-icon name="md-arrow-round-back" color="dark"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>{{type}}</ion-title>
+    <ion-buttons end id="sendBtn" [class.isSend]="isSend" (click)="updateDate()">
+      <button ion-button>
+        send
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-input type="text" (input)="check()" placeholder="Please enter your career" [(ngModel)] = 'sendCon'></ion-input>
+    </ion-item>
+  </ion-list>
+</ion-content>

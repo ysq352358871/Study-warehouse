@@ -1,0 +1,43 @@
+page-account-country {
+  .item.item-divider-md{
+    border: none;
+    margin-left: -12px;
+    padding-left: 12px;
+    width: calc(100% + 12px);
+    background-color: #f5f5f5;
+  }
+  .item-md.item-block .item-inner{
+    border: none;
+  }
+  ion-item-group{
+    padding-left: 12px;
+  }
+  ion-item-group .item-md{
+    padding: 0;
+    border-bottom: 1px solid #D9D9D9;
+  }
+  ion-item-group .item-md:last-child{
+    border: none;
+  }
+
+  .list-md{
+    margin: 0;
+  }
+  #countrySelectBtn{
+    position: fixed;
+    top:calc(3rem + 80px);right: 0;
+    z-index: 100;
+    background-color: transparent;
+
+  }
+  #countrySelectBtn .item-md{
+    padding-left: 0;
+    background-color: transparent;
+    min-height: 1.4rem;
+    color: #2582F3;
+    text-align: center;
+  }
+  #countrySelectBtn .label-md{
+    margin: 0;
+  }
+}

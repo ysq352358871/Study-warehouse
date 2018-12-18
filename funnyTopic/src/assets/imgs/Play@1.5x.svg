@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Topic/List/Play@1.5x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="首页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-168.000000, -1157.000000)" id="视频话题">
+            <g transform="translate(0.000000, 989.000000)">
+                <g id="Topic/List/Play" transform="translate(168.000000, 168.000000)">
+                    <circle id="Oval-2" fill-opacity="0.5" fill="#000000" cx="20" cy="20" r="20"></circle>
+                    <path d="M28.6810036,18.8332213 C29.5775519,19.4776154 29.5764832,20.5231527 28.6810036,21.1667787 L16.6233442,29.8332213 C15.726796,30.4776154 15,30.1103261 15,29.008845 L15,10.991155 C15,9.89147046 15.7278646,9.52315271 16.6233442,10.1667787 L28.6810036,18.8332213 Z" id="Triangle-2" fill="#F5F5F5"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

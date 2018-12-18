@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="32px" viewBox="0 0 33 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Publish/Img@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="39" cy="39" r="39"></circle>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.149019608   0 0 0 0 0.478431373   0 0 0 0 0.874509804  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="发布" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="首页" transform="translate(-171.000000, -498.000000)">
+            <rect id="bg" fill="#F5F5F5" x="0" y="0" width="375" height="667"></rect>
+            <g id="视频话题" transform="translate(0.000000, 502.000000)">
+                <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="375" height="314"></rect>
+                <text id="为什么现在很多人喜欢去一些国外的景点去旅" font-family=".PingFang-SC-Medium, PingFang SC" font-size="16" font-weight="bold" line-spacing="22" fill="#000000">
+                    <tspan x="12" y="27">为什么现在很多人喜欢去一些国外的景点去旅游</tspan>
+                    <tspan x="12" y="49">而不是选择国内游？</tspan>
+                </text>
+            </g>
+            <rect id="Rectangle-2" fill-opacity="0.6" fill="#000000" x="0" y="0" width="375" height="667"></rect>
+            <g id="Group-2" transform="translate(0.000000, 415.000000)">
+                <rect id="Rectangle-2" fill="#FFFFFF" x="0" y="0" width="375" height="252"></rect>
+                <g id="图片" transform="translate(148.500000, 60.000000)">
+                    <g id="Oval">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#5CABFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <g id="Publish/Img" transform="translate(23.000000, 23.000000)" fill="#FFFFFF">
+                        <g id="Img">
+                            <g transform="translate(1.000000, 4.000000)">
+                                <path d="M0,0.995457033 C0,0.445681294 0.447365195,0 0.998153687,0 L29.0018463,0 C29.5531114,0 30,0.455262884 30,0.995457033 L30,24.004543 C30,24.5543187 29.5526348,25 29.0018463,25 L0.998153687,25 C0.446888627,25 0,24.5447371 0,24.004543 L0,0.995457033 Z M2,2.49839123 C2,2.22313735 2.2247715,2 2.4961679,2 L27.5038321,2 C27.7778581,2 28,2.22163089 28,2.49839123 L28,22.5016088 C28,22.7768626 27.7752285,23 27.5038321,23 L2.4961679,23 C2.22214193,23 2,22.7783691 2,22.5016088 L2,2.49839123 Z" id="Combined-Shape"></path>
+                                <circle id="Oval-2" cx="7" cy="7" r="2"></circle>
+                                <path d="M5.77904543,16.6785455 C6.17721765,16.3037952 6.82283068,16.3038406 7.22470522,16.6820755 L15,24 L6.5,24 L2.25,24 L0.125,24 L0.125,22 L2.25,20 L5.77904543,16.6785455 Z" id="Triangle"></path>
+                                <path d="M19.263816,12.6795545 C19.6703992,12.3042469 20.3312722,12.3057897 20.7329975,12.6766131 L26.5,18 L29.75,21 L29.75,24 L26.5,24 L20,24 L7,24 L19.263816,12.6795545 Z" id="Triangle"></path>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Publish/Img" transform="translate(23.000000, 23.000000)" fill="#FFFFFF">
+                        <g id="Img" transform="translate(1.000000, 4.000000)">
+                            <path d="M0,0.995457033 C0,0.445681294 0.447365195,0 0.998153687,0 L29.0018463,0 C29.5531114,0 30,0.455262884 30,0.995457033 L30,24.004543 C30,24.5543187 29.5526348,25 29.0018463,25 L0.998153687,25 C0.446888627,25 0,24.5447371 0,24.004543 L0,0.995457033 Z M2,2.49839123 C2,2.22313735 2.2247715,2 2.4961679,2 L27.5038321,2 C27.7778581,2 28,2.22163089 28,2.49839123 L28,22.5016088 C28,22.7768626 27.7752285,23 27.5038321,23 L2.4961679,23 C2.22214193,23 2,22.7783691 2,22.5016088 L2,2.49839123 Z" id="Combined-Shape"></path>
+                            <circle id="Oval-2" cx="7" cy="7" r="2"></circle>
+                            <path d="M5.77904543,16.6785455 C6.17721765,16.3037952 6.82283068,16.3038406 7.22470522,16.6820755 L15,24 L6.5,24 L2.25,24 L0.125,24 L0.125,22 L2.25,20 L5.77904543,16.6785455 Z" id="Triangle"></path>
+                            <path d="M19.263816,12.6795545 C19.6703992,12.3042469 20.3312722,12.3057897 20.7329975,12.6766131 L26.5,18 L29.75,21 L29.75,24 L26.5,24 L20,24 L7,24 L19.263816,12.6795545 Z" id="Triangle"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

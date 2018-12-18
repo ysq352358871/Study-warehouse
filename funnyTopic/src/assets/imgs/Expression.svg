@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Publish/Edit/Expression</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="12" cy="12" r="10.8"></circle>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="21.6" height="21.6" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="发布" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="发布界面-选择分类" transform="translate(-327.000000, -631.000000)">
+            <g id="Bottom-Bar/Publish" transform="translate(0.000000, 618.000000)">
+                <g id="Publish/Edit/Expression" transform="translate(327.000000, 13.000000)">
+                    <use id="Oval-3" stroke="#333333" mask="url(#mask-2)" stroke-width="2" xlink:href="#path-1"></use>
+                    <path d="M7.1750839,15.5671818 C8.26812477,17.0431683 10.0223224,18 12,18 C13.9776776,18 15.7318752,17.0431683 16.8249161,15.5671818" id="Oval-2" stroke="#333333" stroke-linecap="round"></path>
+                    <ellipse id="Oval" fill="#333333" cx="7.8" cy="9.6" rx="1.2" ry="1.2"></ellipse>
+                    <circle id="Oval" fill="#333333" cx="16.2" cy="9.6" r="1.2"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

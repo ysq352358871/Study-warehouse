@@ -1,0 +1,25 @@
+page-write-comment {
+  #sendBtn{
+    background-color: #6e6e6e;
+    border-radius: 2px;
+    padding:0 5px;
+  }
+  #sendBtn.isSend{
+    background-color: #2582F3;
+  }
+  .bar-button-md{
+    margin: 0;
+    text-transform: none;
+    color: #b3b3b3;
+  }
+  #sendBtn.isSend .bar-button-md{
+    color: #ffffff;
+  }
+
+
+  #textarea{
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+}

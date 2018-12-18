@@ -1,0 +1,15 @@
+<!-- Generated template for the RecordchatComponent component -->
+<div class="chatBox" [class.left] = "data.flag">
+  <p class="userName">{{data.nickname}}</p>
+<div class="avatar">
+  <!--<img src="assets/imgs/stantz.jpg" alt="">-->
+  <img src="{{data.avatarThumbPath}}" alt="">
+</div>
+
+<div class="chatContentBox" (click)="onPlayRecord(data.filePath,data.second,data.minute)">
+  <em></em>
+  <p *ngIf="data.minute == '0'">{{data.second}}"</p>
+  <p *ngIf="data.minute != '0'">{{data.minute}}'{{data.second}}"</p>
+  <div class="voiceAnimate"></div>
+</div>
+</div>

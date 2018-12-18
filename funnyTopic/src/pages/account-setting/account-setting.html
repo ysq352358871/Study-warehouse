@@ -1,0 +1,60 @@
+<!--
+  Generated template for the AccountCenterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Setting</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+    <button ion-item (click)="goCenter()">
+      Personal data
+      <span item-end style="color:#999;font-size: 14px"></span>
+      <ion-icon name="ios-arrow-forward" item-end></ion-icon>
+    </button>
+    <button ion-item >
+      E-mail
+      <span item-end style="color:#999;font-size: 14px">{{userInfo.email}}</span>
+      <!--<ion-icon name="ios-arrow-forward" item-end></ion-icon>-->
+    </button>
+    <button ion-item (click)="goUpdatePass()">
+      Password
+      <!--<span item-end style="color:#999;font-size: 14px">456</span>-->
+      <ion-icon name="ios-arrow-forward" item-end></ion-icon>
+    </button>
+  </ion-list>
+
+  <ion-list>
+    <button ion-item (click)="clearCache()">
+      Clear the cache
+      <span item-end style="color:#999;font-size: 14px">456M</span>
+      <ion-icon name="ios-arrow-forward" item-end></ion-icon>
+    </button>
+    <button ion-item (click)="updateVersion()">
+      Version update
+      <span item-end style="color:#999;font-size: 14px">456</span>
+      <ion-icon name="ios-arrow-forward" item-end></ion-icon>
+    </button>
+    <button ion-item (click)="goFeedback()">
+      User feedback
+      <!--<span item-end style="color:#999;font-size: 14px">456</span>-->
+      <ion-icon name="ios-arrow-forward" item-end></ion-icon>
+    </button>
+  </ion-list>
+  <ion-list>
+    <button ion-item (click)="logOut()">
+      Log out
+      <!--<span item-end style="color:#999;font-size: 14px">456</span>-->
+      <!--<ion-icon name="ios-arrow-forward" item-end></ion-icon>-->
+    </button>
+  </ion-list>
+
+</ion-content>

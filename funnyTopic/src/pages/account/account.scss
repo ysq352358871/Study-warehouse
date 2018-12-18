@@ -1,0 +1,180 @@
+page-account {
+  .header-md::after{
+    background-image: none;
+  }
+  .toolbar-ios ion-title{
+    text-align: center;
+  }
+  .bar-button-default-md{
+    color: #000;
+
+  }
+  .ion-ios-settings-outline:before{
+    font-weight: 600;
+  }
+  .toolbar-background-ios{
+    background-color: transparent;
+  }
+  .toolbar.isScroll .toolbar-background-ios{
+    background-color: #ffffff;
+  }
+// 内容
+  .content-md{
+    background-color:#F5F5F5;
+  }
+  .scroll-content{
+    margin-top: 0!important;
+    background-color:#F5F5F5;
+    background: url("../assets/imgs/bg@3x.png") no-repeat;
+    background-size:100% 50%;
+  }
+  .content.content-md .scroll-content{
+    padding-top: 44px;
+  }
+  .list-md{
+    margin: -1px 0 10px;
+    text-align: center;
+    font-family:SFNSText;
+    color: #333333;
+    letter-spacing: 0;
+  }
+  .list-md#name{
+    font-size: 18px;
+  }
+  .list-md#professional{
+    font-size: 14px;
+    min-height: 1.9rem;
+  }
+  ion-avatar img{
+    margin: 0 auto;
+    width: 10.4rem;
+    height: 10.4rem;
+    border-radius: 100%;
+  }
+
+  #editBtn .button-md{
+    text-transform:none;
+    margin:0;
+    height: 3.2rem;
+    min-width: 10.2rem;
+  }
+
+  ion-segment{
+    background-color: #ffffff;
+  }
+  .segment-button.segment-activated{
+    border-bottom: 1px solid #2582F3;
+  }
+  .segment-md .segment-button{
+    text-transform:none;
+    font-family: PingFangSC-Regular;
+    font-size: 1.6rem;
+    color: #333333;
+    letter-spacing: 0;
+  }
+  .selectList.list.list-md{
+    margin-top: 10px;
+  }
+
+  //topic 列表
+  .card-md{
+    box-shadow: none;
+  }
+  .card-md .item-md{
+    padding-left: 0;
+  }
+  .card-md{
+    margin: 0;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+    padding-right: 12px;
+    background-color: #ffffff;
+  }
+  .toolbar-title-md{
+    padding: 0;
+    font-size: 1.6rem;
+    color: #000000;
+    font-weight: 700;
+  }
+  .button-inner img{
+    width: 1.2rem;height: 1.2rem;
+    margin-right: 0.3em;
+
+  }
+  .button-clear-md{
+    color: #b3b3b3;
+  }
+  .focusNum{
+    margin-top: 3px;
+  }
+  .card-content-md{
+    padding: 13px 0;
+  }
+  ion-card .col{
+    padding: 5px 0;
+  }
+  ion-card .col.active{
+    margin-right: 5px;
+  }
+  .button-clear-md{
+    padding: 0;margin: 0;
+  }
+  .videoThumbnail{
+    position: relative;
+  }
+  .videoThumbnail img.play{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+  }
+
+
+  //关注的用户列表
+  //followBtn 样式
+  .item-md .item-button.followBtn{
+    background-color: #2582F3;
+    height: 32px;
+    padding: 0 1rem;
+    margin-right: 12px;
+    text-transform:none;
+  }
+  .item-md .item-button.followBtn.isFollow{
+    background-color: #ffffff;
+    color: #999999;
+    border: 1px solid #DADADA;
+    padding: 0 0.75rem;
+  }
+  .item-md .item-button.followBtn ion-icon::before{
+    margin-right: 5px;
+  }
+  .item-md.item-block .item-inner{
+    padding-right: 0;
+  }
+  .item-md h2{
+    font-family: PingFangSC-Regular;
+    font-size: 1.6rem;
+    color: #333333;
+  }
+  .list-md .item-block .item-inner{
+    border: none;
+  }
+  //.selectList.list.list-md.following{
+  //  padding-left: 12px;
+  //}
+  .item-md{
+    padding-left: 0;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .card.card-md .item-md{
+    border: none;
+  }
+}

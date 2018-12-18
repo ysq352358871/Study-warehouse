@@ -1,0 +1,9 @@
+<ion-tabs>
+  <div id="circle"></div>
+  <ion-tab [root]="tab1Root" tabTitle="Topic" tabIcon="myIcon"></ion-tab>
+  <ion-tab [root]="tab2Root" (ionSelect)="goNewsCheck()" tabTitle="News" tabIcon="news"></ion-tab>
+  <ion-tab tabTitle="Publish" tabIcon="publish"></ion-tab>
+  <ion-tab [root]="tab4Root" tabTitle="Focus" tabIcon="focus"></ion-tab>
+  <ion-tab [root]="tab5Root" (ionSelect)="goAccountCheck()" tabTitle="My" tabIcon="account"></ion-tab>
+</ion-tabs>
+<!--[root]="tab3Root"-->

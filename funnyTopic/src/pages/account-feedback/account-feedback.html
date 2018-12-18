@@ -1,0 +1,28 @@
+<!--
+  Generated template for the AccountFeedbackPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header mode="ios">
+  <ion-toolbar mode="ios">
+    <ion-buttons start (click)="back()">
+      <button ion-button icon-only color="royal">
+        <ion-icon name="md-arrow-round-back" color="dark"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>User feedback</ion-title>
+    <ion-buttons end id="sendBtn" [class.isSend]="isSend" (click)="addFeedback()">
+      <button ion-button>
+        send
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-textarea placeholder="Please enter here…" style="width: 100%;height: 100%" [(ngModel)]="feedBackCon" (input)="check()">
+
+  </ion-textarea>
+</ion-content>

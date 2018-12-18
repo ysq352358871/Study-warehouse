@@ -1,0 +1,26 @@
+<!--
+  Generated template for the WriteCommentPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header mode="ios">
+  <ion-toolbar mode="ios">
+    <ion-buttons start (click)="back()">
+      <button ion-button icon-only color="royal">
+        <ion-icon name="md-arrow-round-back" color="dark"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Write a note</ion-title>
+    <ion-buttons end id="sendBtn" [class.isSend]="isSend" (click) = "addComments()">
+      <button ion-button>
+        send
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+  <textarea [(ngModel)]="topicComment" (keyup)="checkConOrSend()" id="textarea" placeholder="Please enter here…" rows="1" cols='40' style='overflow:scroll;overflow-y:hidden;overflow-x:hidden'></textarea>
+</ion-content>

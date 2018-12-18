@@ -1,0 +1,62 @@
+chat-ele {
+
+  .chatBox{
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .chatBox:after{
+    display: block;
+    width: 100%;
+    content: "";
+    clear: both;
+  }
+  .chatBox p.userName{
+    margin-top: 0;margin-bottom: 3px;
+    text-align: left;
+    padding-left: 56px;font-family:SFNSText;
+    font-size: 13px;
+    color: #999999;
+    letter-spacing: 0;
+    line-height: 18px;
+  }
+  .avatar{
+    margin: 0 16px 8px 0;
+    min-width: 40px;
+    min-height: 40px;
+    display: inline-block;
+    float: left;
+  }
+  .avatar img{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+  }
+  .chatContentBox{
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    background-color: #ffffff;
+    min-height: 42px;
+    max-width: 20rem;
+    float: left;
+    border-radius: 4px;
+  }
+  .chatContentBox em{
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #ffffff;
+    position: absolute;
+    top:5px;left:-8px;
+  }
+  .chatContentBox p{
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+  }
+
+}

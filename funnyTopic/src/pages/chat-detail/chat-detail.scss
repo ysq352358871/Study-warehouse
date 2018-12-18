@@ -1,0 +1,65 @@
+page-chat-detail {
+  .toolbar-background-md{
+    background-color: #f5f5f5;
+  }
+  .content-md{
+    background-color: #f5f5f5;
+  }
+  .item-md .item-button{
+    color: #666666;
+    font-size: 1.4rem;
+    margin: 0;
+  }
+  .list-ios.messageFlagBox{
+    margin: 10px 0 10px 0;
+  }
+  .list-ios > .item-block.messageFlag:last-child {
+    border-bottom: none;
+    border-top: none;
+  }
+  .list-ios .item-block .item-inner{
+    border: none;
+  }
+  .list-ios > .item-block:first-child{
+    border: none;
+  }
+  .item-ios{
+    margin-bottom: 10px;
+  }
+  .row{
+    //padding: 0 12px 0 12px;
+    background-color: #ffffff;
+    padding-bottom: 10px;
+  }
+  .col{
+    padding: 10px;
+  }
+  ion-avatar{
+    display: block;
+    line-height: 1;
+    width: 5.6rem;
+    height: 5.6rem;
+    border-radius: 100%;
+    margin-bottom: 5px;
+  }
+  ion-avatar img{
+    border-radius: 100%;
+  }
+  p.userName{
+    font-size: 1.2rem;
+    color: #666666;
+    margin: 0;
+    padding: 0;
+    width: 5.6rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .item-ios .item-button#deleteBtn{
+    padding: 0;margin: 0;
+    width: 100%;
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 1.6rem;
+  }
+}

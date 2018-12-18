@@ -1,0 +1,79 @@
+page-hot {
+  //home hotMenu
+  .card-md#hotMenu{
+    //display: none;
+    margin: 0;
+    position: absolute;
+    background-color:rgba(0,0,0,0.2);
+    height: 100%;
+    margin-top: 4.4rem;
+    width: 100%;
+
+  }
+  .card-md#hotMenu .card-header-md{
+    background-color: #ffffff;
+  }
+  .card-md#hotMenu.active{
+    z-index: 3;
+
+  }
+  #menuWrap{
+    //-webkit-transform: translateY(-22rem);
+    //-moz-transform:translateY(-22rem);
+    //transform: translateY(-22rem);
+    -webkit-transform: translateY(0rem);
+    -moz-transform:translateY(0rem);
+    transform: translateY(0rem);
+    transition: transform 1s;
+    -moz-transition: transform 1s; /* Firefox 4 */
+    -webkit-transition: transform 1s; /* Safari 和 Chrome */
+    -o-transition: transform 1s; /* Opera */
+  }
+  #menuWrap.active{
+    -webkit-transform: translateY(0rem);
+    -moz-transform:translateY(0rem);
+    transform: translateY(0rem);
+  }
+  #hotMenu .grid{
+    background-color: #ffffff;
+  }
+  #hotMenu .item-md{
+    background-color: #f0f0f0;
+    text-align: center;
+    height: 32px;
+    min-height: unset;
+    width: 8.2rem;
+    padding-left: 0;
+  }
+  #hotMenu .card-header-md{
+    padding: 10px;
+  }
+  .card-md .item-md.item-block .item-inner{
+    font-size: 1.4rem;
+    color: #333333;
+    padding-right: 0;
+  }
+  .card-md .item-md.item-block.active .item-inner{
+    color: #2582F3;
+  }
+  .label-md{
+    margin: 0;
+  }
+
+  #hotMenu .button.button-md{
+    margin: 0;
+    height:32px;
+    width: 8.2rem;
+    background-color: #f0f0f0;
+    border-radius: 0;
+    box-shadow: none;
+    text-transform:none;
+    font-size: 1.4rem;
+    color: #333333;
+    font-weight: 400;
+  }
+  .grid{
+    padding: 5px 10px;
+  }
+}
+

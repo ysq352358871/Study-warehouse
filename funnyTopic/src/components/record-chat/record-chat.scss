@@ -1,0 +1,134 @@
+record-chat {
+  .chatBox{
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .chatBox:after{
+    display: block;
+    width: 100%;
+    content: "";
+    clear: both;
+  }
+  .chatBox p.userName{
+    margin-top: 0;margin-bottom: 3px;
+    text-align: right;
+    padding-right: 56px;font-family:SFNSText;
+    font-size: 13px;
+    color: #999999;
+    letter-spacing: 0;
+    line-height: 18px;
+  }
+  .avatar{
+    margin: 0  0 8px 16px;
+    min-width: 40px;
+    min-height: 40px;
+    display: inline-block;
+    float: right;
+  }
+  .avatar img{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+  }
+  .chatContentBox{
+    display: inline-block;
+    padding: 0 10px;
+    position: relative;
+    background-color:#2582F3;
+    width: 13.3rem;height: 36px;
+    line-height: 36px;
+    float: right;
+    border-radius: 4px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  .chatContentBox em{
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #2582F3;
+    position: absolute;
+    top:5px;right:-8px;
+  }
+  .chatContentBox p{
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 50%;
+  }
+  .voiceAnimate{
+    float: right;
+    height: 20px;
+    width: 12px;
+    position: absolute;
+    top:0;bottom: 0;right: 10px;
+    margin: auto 0;
+    background-repeat: no-repeat;
+    //background-image: url(../../assets/imgs/voiceAnimate.svg);
+    background-image: url(../assets/imgs/voicegif_white@3x.png);
+    background-size: 60px auto;
+    //background-position: 0px center;
+    background-position: -6px center;
+
+  }
+  .voiceAnimate.playAction{
+    -webkit-animation: voicePlay 1s infinite step-start;
+    -moz-animation: voicePlay 1s infinite step-start;
+    -o-animation: voicePlay 1s infinite step-start;
+    animation: voicePlay 1s infinite step-start;
+  }
+
+  // 左边模式
+  .chatBox.left p.userName{
+    text-align: left;
+    padding-left: 56px;
+    padding-right: 0;
+  }
+  .chatBox.left .avatar{
+    float: left;
+    margin: 0 16px 8px 0;
+  }
+  .chatBox.left .chatContentBox{
+    float: left;
+    background-color: #ffffff;
+    color: #333333;
+  }
+
+  .chatBox.left .chatContentBox em{
+    border-left:none;
+    border-right: 10px solid #fff;
+    left:-8px;
+  }
+  .chatBox.left .chatContentBox p{
+    float: right;
+    text-align: right;
+  }
+  .chatBox.left .voiceAnimate{
+    float: left;
+    left: 10px;
+    width: 20px;
+    background-image: url(../assets/imgs/voicegif_blue@3x.png);
+    background-size: 60px auto;
+    background-position: -6px center;
+  }
+
+
+
+
+
+  @-webkit-keyframes voicePlay {
+    0%,
+    100% {
+      background-position: -23px center;
+    }
+    33.333333% {
+      background-position: -6px center;
+    }
+    66.666666% {
+      background-position: -40px center;
+    }
+  }
+}

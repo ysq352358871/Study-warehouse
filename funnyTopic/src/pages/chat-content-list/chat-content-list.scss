@@ -1,0 +1,48 @@
+page-chat-content-list {
+  .searchbar-md .searchbar-input{
+    border-radius: 100px;
+    box-shadow: none;
+    background-color: #f0f0f0;
+  }
+
+
+
+  .item.item-divider-md{
+    border: none;
+    margin-left: -12px;
+    padding-left: 12px;
+    width: calc(100% + 12px);
+  }
+  .item-md.item-block .item-inner{
+    border: none;
+  }
+  ion-item-group{
+    padding-left: 12px;
+  }
+  ion-item-group .item-md{
+    padding: 0;
+    border-bottom: 1px solid #D9D9D9;
+  }
+  ion-item-group .item-md:last-child{
+    border: none;
+  }
+
+  #chatContent .item-block{
+    -webkit-box-align: inherit;
+    -webkit-align-items: inherit;
+    -ms-flex-align: inherit;
+    align-items: inherit;
+  }
+  p.commentsText{
+    white-space: normal;
+    margin-top: 6px;
+    font-size: 1.3rem;
+    color: #666666;
+    line-height: 20px;
+  }
+  #chatContent .checkbox-icon{
+    margin-top: 16px;
+    margin-right: 10px;
+  }
+
+}

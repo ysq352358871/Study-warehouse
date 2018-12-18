@@ -1,0 +1,48 @@
+page-account-update-pass {
+  #sendBtn{
+    background-color: #e6e6e6;
+    border-radius: 2px;
+    padding:0 5px;
+  }
+  #sendBtn.isSend{
+    background-color: #2582F3;
+  }
+  .bar-button-md{
+    margin: 0;
+    text-transform: none;
+    color: #b3b3b3;
+  }
+  #sendBtn.isSend .bar-button-md{
+    color: #ffffff;
+  }
+  .toolbar-ios ion-title{
+    padding: 0 30px 1px;
+  }
+
+
+  .list-md .item-input:last-child{
+    border-bottom: none;
+  }
+  .list-md .item-block .item-inner{
+    border: none;
+    padding-right: 12px;
+  }
+  .list-md .item-block .item-inner .input-wrapper{
+    border-bottom: 1px solid #2582F3;
+  }
+  .list-md .item-input.item-input-has-focus:last-child{
+    box-shadow: none;
+  }
+  .item-input .label-md{
+    color: #b3b3b3;
+    font-size: 1.4rem;
+  }
+  p.beiZhu{
+    padding: 0 12px;
+    font-family: SFUIText-Regular;
+    font-size: 11px;
+    color: #CCCCCC;
+    letter-spacing: 0;
+    line-height: 14px;
+  }
+}
