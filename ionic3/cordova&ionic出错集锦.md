@@ -1,0 +1,2 @@
+##### 1. Execution failed for task ':processDebugResources'。Error:In declare-styleable FontFamilyFont, unable to find attribute android:font
+> 原因 compileSDK版本 与 com.android.support:support-v4或者com.android.support:appcompat版本不同，修改版本号即可
